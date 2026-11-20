@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My First App</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding-top: 80px; background: #f0f4f8; }
+    h1 { font-size: 60px; margin: 20px; }
+    button { font-size: 24px; padding: 15px 30px; border-radius: 12px; border: none; background: #007bff; color: white; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>Tap Counter</h2>
+  <h1 id="count">0</h1>
+  <button onclick="addOne()">+1 Tap</button>
+
+  <script>
+    let number = 0;
+    function addOne() {
+      number = number + 1;
+      document.getElementById("count").innerText = number;
+    }
+  </script>
+</body>
+</html>
